@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.dreamyprogrammer.myweather.R
 import com.dreamyprogrammer.myweather.adapters.ForecastTodayAdapter
 import com.dreamyprogrammer.myweather.databinding.MainFragmentBinding
 import com.dreamyprogrammer.myweather.model.Weather
@@ -75,11 +76,14 @@ class HomeFragment : Fragment() {
         }
     }
 
+    // С выводом пока не заморачивался. В константы пока не убирал но уберу
     private fun setData(weatherData: Weather) {
         binding.cityTextView.text = weatherData.location.city
-//        binding.cityCoordinates.text = getString(R.string.city_coordinates) + "   "+ weatherData.location.lat.toString() + "    " + weatherData.location.lat.toString()
-        binding.temperatureTextView.text = weatherData.temperature.toString()
-//        binding.feelsLikeValue.text = weatherData.feelsLike.toString()
+        binding.temperatureTextView.text = if(weatherData.temperature > 0 ) "+"+weatherData.temperature.toString() else weatherData.temperature.toString()
+        binding.weatherTextView.text = getString(R.string.home) + " - " + weatherData.weather
+        binding.windTextView.text = getString(R.string.wind) +" "+ weatherData.wind.toString()
+        binding.pressureTextView.text = getString(R.string.pressure) + " "+ weatherData.pressure.toString() + "мм р.с."
+        binding.humidityTextView.text = getString(R.string.pressure) +" " + weatherData.humidity.toString() + "%"
     }
 
 

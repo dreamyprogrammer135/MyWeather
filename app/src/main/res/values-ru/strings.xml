@@ -6,4 +6,7 @@
     <string name="forecast">Прогноз</string>
     <string name="location">Местоположение</string>
     <string name="icon">Sunny</string>
+    <string name="wind">Ветер</string>
+    <string name="pressure">Давление</string>
+    <string name="humidity">Влажность</string>
 </resources>
