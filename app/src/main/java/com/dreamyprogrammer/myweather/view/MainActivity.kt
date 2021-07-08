@@ -1,7 +1,7 @@
 package com.dreamyprogrammer.myweather.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.dreamyprogrammer.myweather.R
 import com.dreamyprogrammer.myweather.databinding.MainActivityBinding
 

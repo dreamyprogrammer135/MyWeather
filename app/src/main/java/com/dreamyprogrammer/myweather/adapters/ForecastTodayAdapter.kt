@@ -4,11 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.dreamyprogrammer.myweather.R
 import com.dreamyprogrammer.myweather.model.ForecastNowWeather
-import com.dreamyprogrammer.myweather.model.Weather
 
 class ForecastTodayAdapter : RecyclerView.Adapter<ForecastTodayAdapter.ViewHolder>() {
 
@@ -25,7 +23,8 @@ class ForecastTodayAdapter : RecyclerView.Adapter<ForecastTodayAdapter.ViewHolde
     ): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_forecast_today, parent, false) as View)
+                .inflate(R.layout.item_forecast_today, parent, false) as View
+        )
 
     }
 
@@ -42,15 +41,7 @@ class ForecastTodayAdapter : RecyclerView.Adapter<ForecastTodayAdapter.ViewHolde
         fun bind(forecast: ForecastNowWeather) {
             itemView.findViewById<TextView>(R.id.time_text_view).text = forecast.time
 //            itemView.findViewById<TextView>(R.id.visible_weather_imageview).background = itemView.resources
-//            itemView.findViewById<TextView>(R.id.temperature_text_view).text = forecast.temperature
-//            itemView.setOnClickListener {
-//                Toast.makeText(
-//                    itemView.context,
-//                    "123",
-////                    movie.name,
-//                    Toast.LENGTH_LONG
-//                ).show()
-//            }
+            itemView.findViewById<TextView>(R.id.temperature_text_view).text = forecast.temperature
         }
     }
 

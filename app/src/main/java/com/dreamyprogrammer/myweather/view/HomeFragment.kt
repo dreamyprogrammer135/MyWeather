@@ -16,9 +16,9 @@ import com.google.android.material.snackbar.Snackbar
 
 class HomeFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = HomeFragment()
-    }
+//    companion object {
+//        fun newInstance() = HomeFragment()
+//    }
 
     private lateinit var viewModel: HomeViewModel
 
@@ -31,8 +31,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = MainFragmentBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -40,6 +39,7 @@ class HomeFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         viewModel.getLiveDate().observe(viewLifecycleOwner, Observer { renderData(it) })
         viewModel.getWeatherFromLocalSource()
+        viewModel.getForecastNowWeatherFromLocalStorage()
         initView()
     }
 
@@ -49,7 +49,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun initView() {
-        var recyclerviewPlaying = binding.recyclerForecastToday
+        val recyclerviewPlaying = binding.recyclerForecastToday
         recyclerviewPlaying.adapter = forecastTodayAdapter
     }
 

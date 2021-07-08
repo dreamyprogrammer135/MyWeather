@@ -1,7 +1,5 @@
 package com.dreamyprogrammer.myweather.model
 
-import java.util.*
-
 data class Weather(
     val location: Location = getDefaultLocation(),
     val temperature: Int = 0,

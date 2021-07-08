@@ -3,27 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/item_margin"
     android:orientation="vertical">
+
     <TextView
         android:id="@+id/time_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_margin"
         android:gravity="center"
+        android:textColor="@color/card_view_light_background_main"
         android:textSize="@dimen/text_item_size_now"
-        tools:text="12:00"/>
+        tools:text="12:00" />
 
     <ImageView
         android:id="@+id/visible_weather_imageview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:background="@drawable/sunny32"/>
+        android:layout_margin="@dimen/simple_margin"
+        android:background="@drawable/sunny32"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/temperature_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simple_margin"
         android:gravity="center"
+        android:textColor="@color/card_view_light_background_main"
         android:textSize="@dimen/text_item_size_now"
-        tools:text= "+27"/>
+        android:textStyle="bold"
+        tools:text="+27" />
 </LinearLayout>

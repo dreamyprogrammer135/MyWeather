@@ -2,7 +2,7 @@ package com.dreamyprogrammer.myweather.model
 
 class RepositoryImpl : Repository {
     override fun getWeatherFromServer(): Weather {
-       return Weather()
+        return Weather()
     }
 
     override fun getWeatherFromLocalStorage(): Weather {
