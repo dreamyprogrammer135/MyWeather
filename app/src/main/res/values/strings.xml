@@ -8,4 +8,5 @@
     <string name="wind">Wind</string>
     <string name="pressure">Pressure</string>
     <string name="humidity">Humidity</string>
+    <string name="qqq" translatable="false">qqq</string>
 </resources>
