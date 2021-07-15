@@ -79,11 +79,14 @@ class HomeFragment : Fragment() {
     // С выводом пока не заморачивался. В константы пока не убирал но уберу
     private fun setData(weatherData: Weather) {
         binding.cityTextView.text = weatherData.location.city
-        binding.temperatureTextView.text = if(weatherData.temperature > 0 ) "+"+weatherData.temperature.toString() else weatherData.temperature.toString()
+        binding.temperatureTextView.text =
+            if (weatherData.temperature > 0) "+" + weatherData.temperature.toString() else weatherData.temperature.toString()
         binding.weatherTextView.text = getString(R.string.home) + " - " + weatherData.weather
-        binding.windTextView.text = getString(R.string.wind) +" "+ weatherData.wind.toString()
-        binding.pressureTextView.text = getString(R.string.pressure) + " "+ weatherData.pressure.toString() + "мм р.с."
-        binding.humidityTextView.text = getString(R.string.pressure) +" " + weatherData.humidity.toString() + "%"
+        binding.windTextView.text = getString(R.string.wind) + " " + weatherData.wind.toString()
+        binding.pressureTextView.text =
+            getString(R.string.pressure) + " " + weatherData.pressure.toString() + "мм р.с."
+        binding.humidityTextView.text =
+            getString(R.string.pressure) + " " + weatherData.humidity.toString() + "%"
     }
 
 

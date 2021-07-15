@@ -33,7 +33,7 @@ class NavigationContainerFragment : Fragment() {
     private fun navigate(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.item_home -> navigateToFragment(HomeFragment())
-            R.id.item_forecast -> navigateToFragment(HomeFragment())
+            R.id.item_forecast -> navigateToFragment(ForecastFragment())
             R.id.item_location -> navigateToFragment(HomeFragment())
         }
 
