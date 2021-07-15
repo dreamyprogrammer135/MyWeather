@@ -8,4 +8,7 @@
     <string name="wind">Wind</string>
     <string name="pressure">Pressure</string>
     <string name="humidity">Humidity</string>
+    <string name="current_place">Current place</string>
+    <string name="favourites">Favourites</string>
+    <string name="select_city"> + Select city</string>
 </resources>

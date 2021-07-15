@@ -34,7 +34,7 @@ class NavigationContainerFragment : Fragment() {
         when (item.itemId) {
             R.id.item_home -> navigateToFragment(HomeFragment())
             R.id.item_forecast -> navigateToFragment(ForecastFragment())
-            R.id.item_location -> navigateToFragment(HomeFragment())
+            R.id.item_location -> navigateToFragment(SelectCityFragment())
         }
 
         return true

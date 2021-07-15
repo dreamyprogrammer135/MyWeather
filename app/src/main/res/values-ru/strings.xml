@@ -9,4 +9,7 @@
     <string name="wind">Ветер</string>
     <string name="pressure">Давление</string>
     <string name="humidity">Влажность</string>
+    <string name="current_place">Текущее место</string>
+    <string name="favourites">Избранное</string>
+    <string name="select_city"> + Выберите город</string>
 </resources>
