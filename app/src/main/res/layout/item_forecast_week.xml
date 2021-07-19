@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forecast_week_itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_margin_week"
+        android:background="@color/card_view_light_background_main"
+        android:orientation="horizontal"
+        tools:ignore="PrivateResource,UselessParent">
+
+        <TextView
+            android:id="@+id/day_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/text_size_max"
+            android:textStyle="bold"
+            tools:ignore="UnusedAttribute"
+            tools:text="17 августа" />
+
+        <ImageView
+            android:id="@+id/day_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sunny"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/temperature_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/text_size_max"
+            android:textStyle="bold"
+            tools:ignore="UnusedAttribute"
+            tools:text="+21" />
+
+    </LinearLayout>
+</FrameLayout>
