@@ -1,20 +1,19 @@
 package com.dreamyprogrammer.myweather.model
 
-class RepositoryImpl : Repository {
+class RepositoryYandexWeather : Repository {
     override fun getWeatherFromServer(): Weather {
-        return getDefaultWeather();
+        TODO("Not yet implemented")
     }
 
     override fun getWeatherFromLocalStorage(): List<Weather> {
-        return getRussianCities();
+        TODO("Not yet implemented")
     }
 
     override fun getForecastDayWeatherFromLocalStorage(): List<ForecastNowWeather> {
-        return getDefaultForecastNow()
+        TODO("Not yet implemented")
     }
 
     override fun getForecastWeekWeatherDate(): List<ForecastWeekWeather> {
-        return getDefaultForecastWeek()
+        TODO("Not yet implemented")
     }
-
 }

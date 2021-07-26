@@ -17,7 +17,7 @@ class ForecastViewModel(private val liveDataToObserver: MutableLiveData<AppState
             liveDataToObserver.postValue(
                 AppState.Success(
                     repositoryImpl.getWeatherFromServer(),
-                    repositoryImpl.getForecastNowWeatherFromLocalStorage(),
+                    repositoryImpl.getForecastDayWeatherFromLocalStorage(),
                     repositoryImpl.getForecastWeekWeatherDate()
                 )
             )

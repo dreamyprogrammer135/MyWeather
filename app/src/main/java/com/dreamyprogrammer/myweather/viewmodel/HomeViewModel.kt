@@ -23,7 +23,7 @@ class HomeViewModel(
             liveDataToObserver.postValue(
                 AppState.Success(
                     repositoryImpl.getWeatherFromServer(),
-                    repositoryImpl.getForecastNowWeatherFromLocalStorage(),
+                    repositoryImpl.getForecastDayWeatherFromLocalStorage(),
                     repositoryImpl.getForecastWeekWeatherDate()
                 )
             )
