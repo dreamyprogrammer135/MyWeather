@@ -1,8 +1,9 @@
 package com.dreamyprogrammer.myweather.viewmodel
 
-import com.dreamyprogrammer.myweather.model.ForecastNowWeather
-import com.dreamyprogrammer.myweather.model.ForecastWeekWeather
-import com.dreamyprogrammer.myweather.model.Weather
+import com.dreamyprogrammer.myweather.model.repository.ForecastNowWeather
+import com.dreamyprogrammer.myweather.model.repository.ForecastWeekWeather
+import com.dreamyprogrammer.myweather.model.repository.Weather
+
 
 sealed class AppState {
     data class Success(

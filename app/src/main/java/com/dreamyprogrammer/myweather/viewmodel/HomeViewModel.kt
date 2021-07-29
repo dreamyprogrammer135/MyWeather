@@ -2,7 +2,7 @@ package com.dreamyprogrammer.myweather.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.dreamyprogrammer.myweather.model.RepositoryImpl
+import com.dreamyprogrammer.myweather.model.repository.RepositoryImpl
 import java.lang.Thread.sleep
 
 class HomeViewModel(

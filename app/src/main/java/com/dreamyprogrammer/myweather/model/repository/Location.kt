@@ -1,4 +1,4 @@
-package com.dreamyprogrammer.myweather.model
+package com.dreamyprogrammer.myweather.model.repository
 
 data class Location(
     val city: String,

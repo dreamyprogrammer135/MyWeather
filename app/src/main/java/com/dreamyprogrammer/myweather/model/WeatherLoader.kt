@@ -5,6 +5,7 @@ import android.os.Handler
 import android.util.Log
 import androidx.annotation.RequiresApi
 import com.dreamyprogrammer.myweather.BuildConfig
+import com.dreamyprogrammer.myweather.model.repository.yandexrepository.WeatherFull
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import java.io.BufferedReader
@@ -16,10 +17,11 @@ import javax.net.ssl.HttpsURLConnection
 
 @RequiresApi(Build.VERSION_CODES.N)
 
-class WeatherLoader(private val listener: WeatherLoaderListener, private val
-        lat: Double, private val lon: Double) {
+class WeatherLoader(
+    private val listener: WeatherLoaderListener, private val
+    lat: Double, private val lon: Double
+) {
 
-    @RequiresApi(Build.VERSION_CODES.N)
     fun loadWeather() {
         try {
             val uri =
@@ -49,7 +51,7 @@ class WeatherLoader(private val listener: WeatherLoaderListener, private val
                 } catch (e: Exception) {
                     Log.e("@@@", "Fail connection", e)
                     e.printStackTrace()
-                    listener.onFailed(e)
+                    handler.post { listener.onFailed(e) }
                 } finally {
                     urlConnection.disconnect()
                 }

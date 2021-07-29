@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dreamyprogrammer.myweather.R
-import com.dreamyprogrammer.myweather.model.ForecastWeekWeather
+import com.dreamyprogrammer.myweather.model.repository.ForecastWeekWeather
 
 class ForecastWeekAdapter : RecyclerView.Adapter<ForecastWeekAdapter.ViewHolder>() {
 

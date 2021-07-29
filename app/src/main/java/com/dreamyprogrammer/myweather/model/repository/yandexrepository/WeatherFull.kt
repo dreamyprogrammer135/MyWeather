@@ -1,4 +1,4 @@
-package com.dreamyprogrammer.myweather.model
+package com.dreamyprogrammer.myweather.model.repository.yandexrepository
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
@@ -10,6 +10,9 @@ data class WeatherFull(
     @Json(name = "info")
     val locationInfo: LocationInfo,
     @Json(name = "fact")
-    val weatherNow: WeatherNow
+    val weatherNow: WeatherNow,
+    @Json(name = "forecast")
+    val weatherForecast: ForecastWeekWeatherYandex
 )
+
 

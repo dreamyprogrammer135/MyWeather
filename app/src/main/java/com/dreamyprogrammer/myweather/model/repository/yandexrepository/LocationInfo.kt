@@ -1,4 +1,4 @@
-package com.dreamyprogrammer.myweather.model
+package com.dreamyprogrammer.myweather.model.repository.yandexrepository
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

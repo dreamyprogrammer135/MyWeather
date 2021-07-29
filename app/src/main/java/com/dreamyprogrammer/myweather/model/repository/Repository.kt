@@ -1,4 +1,5 @@
-package com.dreamyprogrammer.myweather.model
+package com.dreamyprogrammer.myweather.model.repository
+
 
 interface Repository {
     fun getWeatherFromServer(): Weather

@@ -11,4 +11,7 @@
     <string name="current_place">Current place</string>
     <string name="favourites">Favourites</string>
     <string name="select_city"> + Select city</string>
+    <string name="title_alert_dialog_connect">ERROR!</string>
+    <string name="message_allert_dialog_connect">There is no Internet access</string>
+    <string name="button_ok" translatable="false">ОК</string>
 </resources>

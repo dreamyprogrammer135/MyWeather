@@ -12,4 +12,6 @@
     <string name="current_place">Текущее место</string>
     <string name="favourites">Избранное</string>
     <string name="select_city"> + Выберите город</string>
+    <string name="title_alert_dialog_connect">Ошибка!</string>
+    <string name="message_allert_dialog_connect">Нет доступа к интернету</string>
 </resources>

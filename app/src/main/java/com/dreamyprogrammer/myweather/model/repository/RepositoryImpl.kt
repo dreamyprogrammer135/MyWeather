@@ -1,4 +1,5 @@
-package com.dreamyprogrammer.myweather.model
+package com.dreamyprogrammer.myweather.model.repository
+
 
 class RepositoryImpl : Repository {
     override fun getWeatherFromServer(): Weather {
