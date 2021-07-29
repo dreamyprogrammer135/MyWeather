@@ -14,4 +14,5 @@
     <string name="select_city"> + Выберите город</string>
     <string name="title_alert_dialog_connect">Ошибка!</string>
     <string name="message_allert_dialog_connect">Нет доступа к интернету</string>
+    <string name="broadcast_receiver">Широковещательное сообщение</string>
 </resources>
